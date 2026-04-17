@@ -24,11 +24,11 @@ function App() {
   </section>
 
   {/* About Section */}
-  <section id="about" className="bg-slate-900 text-center">
-   <h1 className="text-cyan-400 text-2xl font-bold py-5">About Me</h1>
+  <section id="about" className="bg-slate-900 py-32 text-center">
+   <h1 className="text-cyan-400 text-2xl font-bold pt-5">About Me</h1>
    <div className="  flex justify-center items-center">
-    <div className="w-150 border mx-5 p-4 border-slate-500">
-    <p className="text-slate-300 text-left">l am a Frontend Web Developer based in Ongata Rongai, Kenya specializing in building business web applications using React,TypeScript, Firebase and Tailwind.
+    <div className="w-180 border my-8 mx-5 px-7 py-10 tracking-wide rounded-xl border-slate-500">
+    <p className="text-slate-300 text-left">l am a Frontend Web Developer based in Ongata Rongai, Kenya specializing in building business web applications using React,TypeScript,Firebase and Tailwind.
       l am self-taught, self-driven and l built real deployed applications that solve real business problems.l am available for freelance projects and remote opportunities world wide.
     </p>
     </div>
