@@ -1,25 +1,49 @@
 import Library from "./assets/Screenshot 2026-04-16 13.57.40.png"
 import Booking from "./assets/Screenshot 2026-04-16 13.32.36.png"
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 
 function App() {
+const [openNav, setOpenNav] = useState(false)
+
+
   return <>
-  <nav className="bg-slate-900 items-center z-50 border-b border-slate-500 flex fixed top-0 w-full justify-between p-5 text-slate-100">
+  <nav className="bg-slate-900 z-50 border-b border-slate-500 fixed top-0 w-full p-5 text-slate-100">
+    <div className="flex justify-between items-center">
     <div>
       <p className="font-bold text-lg tracking-wide"><span className="text-cyan-400">Brian</span> Tech Solutions</p>
     </div> 
 
-   <div className="flex text-slate-300 font-bold gap-4 md:gap-25">
+   <div className="md:flex hidden text-slate-300 text-sm font-bold gap-4 md:gap-25">
     <a href="#about" className="hover:text-cyan-400 transition-all">About</a><a className="hover:text-cyan-400 transition-all" href="#skills">Skills</a><a href="#projects" className="hover:text-cyan-400 transition-all">Projects</a><a className="hover:text-cyan-400 transition-all" href="#contact">Contact</a>
    </div>
+    <button onClick={() => setOpenNav(!openNav)} className="md:hidden cursor-pointer">
+      {openNav ? <X/> : <Menu/>}
+    </button>
+   </div>
+   
+   { openNav &&
+         <div className="md:hidden flex flex-col gap-4 pt-4 pb-2">
+          <a href="#about" onClick={() => setOpenNav(false)} className="text-slate-300 transition-all hover:text-cyan-400 text-sm">About</a>
+          <a href="#skills" onClick={() => setOpenNav(false)} className="text-slate-300 transition-all hover:text-cyan-400 text-sm">Skills</a>
+          <a href="#projects" onClick={() => setOpenNav(false)} className="text-slate-300 transition-all hover:text-cyan-400 text-sm">Projects</a>
+          <a href="#contact" onClick={() => setOpenNav(false)} className="text-slate-300 transition-all hover:text-cyan-400 text-sm">Contact</a>
+        </div>
+}
   </nav>
+
+  {/* Mobile Menu */}
+  <div className="md:hidden">
+    
+  </div>
 
 
   {/* Hero Section */}
   <section className="bg-slate-950 text-center items-center flex justify-center min-h-screen">
     <div className="mx-4">
-      <h1 className="text-slate-100 tracking-wide pb-5 font-extrabold text-5xl">Hello, l am <span className="text-cyan-400">Brian</span></h1>
-      <p className="text-slate-300 pb-7 tracking-wide">A Frontend Developer building modern and scalable web applications with React, TypeScript, and Firebase.</p>
+      <h1 className="text-slate-100 tracking-wide  pb-5 font-extrabold text-5xl">Hello, l am <span className="text-cyan-400">Brian</span></h1>
+      <p className="text-slate-300 mx-4 pb-7 tracking-wide">A Frontend Developer building modern and scalable web applications with React, TypeScript, and Firebase.</p>
       <div className="tracking-wide flex justify-center gap-4">
         <a href="#projects" className="bg-cyan-400  py-2 px-4 hover:opacity-80 transition-all font-bold duration-100 rounded cursor-pointer">See My Work</a>
         <a href="#contact" className="border text-slate-300 hover:opacity-80 transition-all duration-100 cursor-pointer py-2 px-5 font-bold rounded border-slate-500">Contact Me</a>
