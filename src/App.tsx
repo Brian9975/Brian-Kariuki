@@ -74,7 +74,7 @@ function App() {
           Visit
           </a>
 
-          <a href="" className="border-slate-500 hover:opacity-80 cursor-pointer rounded border py-2 px-5 text-slate-300">
+          <a href="https://github.com/Brian9975/Strathmore-Chaplaincy-Lib" className="border-slate-500 hover:opacity-80 cursor-pointer rounded border py-2 px-5 text-slate-300">
             Github
           </a>
       </div>
@@ -99,7 +99,7 @@ function App() {
           Visit
           </a>
 
-          <a href="" className="border-slate-500 hover:opacity-80 cursor-pointer rounded border py-2 px-5 text-slate-300">
+          <a href="https://github.com/Brian9975/Booking-System" className="border-slate-500 hover:opacity-80 cursor-pointer rounded border py-2 px-5 text-slate-300">
             Github
           </a>
       </div>
