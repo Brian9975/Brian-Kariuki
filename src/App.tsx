@@ -141,20 +141,20 @@ const [openNav, setOpenNav] = useState(false)
         <label className="text-slate-100 text-lg font-bold">
           Name
         </label>
-        <input className="border-slate-500 mt-1.5 w-85 py-1 text-slate-100 px-2 outline-slate-500 border rounded" type="text" />
+        <input className="border-slate-500 mt-1.5 w-70 md:w-100 py-1 text-slate-100 px-2 outline-slate-500 border rounded" type="text" />
       </div>
       <div className="flex flex-col items-start">
         <label className="text-slate-100 text-lg font-bold">
           Email
         </label>
-        <input className="border-slate-500 mt-1.5 w-85 py-1 text-slate-100 px-2 outline-slate-500 border rounded " type="email" />
+        <input className="border-slate-500 mt-1.5 w-70 md:w-100 py-1 text-slate-100 px-2 outline-slate-500 border rounded " type="email" />
       </div>
 
         <div className="flex flex-col items-start">
         <label className="text-slate-100 text-lg font-bold">
           Your Message
         </label>
-        <textarea className="border-slate-500 mt-1.5 py-1 text-slate-100 px-2 outline-slate-500 border w-85 rounded"  name="" id=""></textarea>
+        <textarea className="border-slate-500 mt-1.5 py-1 text-slate-100 px-2 outline-slate-500 border w-70 md:w-100 rounded"  name="" id=""></textarea>
       </div>
 
       <button className="border border-slate-500 text-slate-950 bg-slate-100 py-1.5 w-full rounded cursor-pointer hover:opacity-80">Send</button>
