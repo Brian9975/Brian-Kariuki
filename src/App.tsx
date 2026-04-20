@@ -33,10 +33,7 @@ const [openNav, setOpenNav] = useState(false)
 }
   </nav>
 
-  {/* Mobile Menu */}
-  <div className="md:hidden">
-    
-  </div>
+ 
 
 
   {/* Hero Section */}
@@ -131,6 +128,40 @@ const [openNav, setOpenNav] = useState(false)
   </div>
 </section>
   
+  <section id="contact" className="bg-slate-950 py-30 tracking-wide text-center">
+      <h1 className="text-cyan-400 tracking-wide font-bold text-2xl">Contact</h1>
+      <p className="font-bold text-slate-300 tracking-wide pt-5 pb-10">Lets get in touch</p>
+        <p className="text-slate-300 mb-10 mx-4">
+    Available for freelance projects and remote opportunities worldwide
+  </p>
+
+  <div className="flex justify-center">
+    <form className="bg-slate-900 border border-slate-500 flex flex-col items-center justify-center gap-7 rounded-xl mx-10 p-5 text-slate-5" action="">
+      <div className="flex flex-col items-start">
+        <label className="text-slate-100 text-lg font-bold">
+          Name
+        </label>
+        <input className="border-slate-500 mt-1.5 w-85 py-1 text-slate-100 px-2 outline-slate-500 border rounded" type="text" />
+      </div>
+      <div className="flex flex-col items-start">
+        <label className="text-slate-100 text-lg font-bold">
+          Email
+        </label>
+        <input className="border-slate-500 mt-1.5 w-85 py-1 text-slate-100 px-2 outline-slate-500 border rounded " type="email" />
+      </div>
+
+        <div className="flex flex-col items-start">
+        <label className="text-slate-100 text-lg font-bold">
+          Your Message
+        </label>
+        <textarea className="border-slate-500 mt-1.5 py-1 text-slate-100 px-2 outline-slate-500 border w-85 rounded"  name="" id=""></textarea>
+      </div>
+
+      <button className="border border-slate-500 text-slate-950 bg-slate-100 py-1.5 w-full rounded cursor-pointer hover:opacity-80">Send</button>
+    </form>
+  </div>
+ 
+  </section>
   
   </>;
 }
