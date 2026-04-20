@@ -249,6 +249,8 @@ const name = form.current!.from_name.value.trim()
     </a>
   </div>
 </div>
+
+<p className="text-slate-500 mt-4 text-sm"> © 2026 Brrian Tech Solutions. All rights reserved.</p>
  </footer>
   </section>
 
