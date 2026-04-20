@@ -2,8 +2,10 @@ import Library from "./assets/Screenshot 2026-04-16 13.57.40.png"
 import Booking from "./assets/Screenshot 2026-04-16 13.32.36.png"
 import { useState, useRef } from "react";
 import { Menu, X, CheckCircle, XCircle } from "lucide-react";
-import emailjs from "@emailjs/browser"
-
+import emailjs from "@emailjs/browser";
+import Github from "./assets/github-white-icon.png";
+import LinkedIn from "./assets/linkedin-app-white-icon.png";
+import Upwork from "./assets/upwork-svgrepo-com.svg"
 
 function App() {
 const form = useRef<HTMLFormElement>(null)
@@ -137,7 +139,7 @@ const name = form.current!.from_name.value.trim()
   </section>
 
 
-<section id="projects" className="bg-slate-900 text-center py-30">
+<section id="projects" className="bg-slate-900 relative text-center py-30">
   <h1 className="text-cyan-400 tracking-wide font-bold text-2xl">Projects</h1>
   <p className="font-bold text-slate-300 tracking-wide pt-5 pb-10">What l have built</p>
   <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-4">
@@ -192,7 +194,7 @@ const name = form.current!.from_name.value.trim()
   </div>
 </section>
   
-  <section id="contact" className="bg-slate-950 py-30 tracking-wide text-center">
+  <section id="contact" className="bg-slate-950 pt-30 tracking-wide text-center">
       <h1 className="text-cyan-400 tracking-wide font-bold text-2xl">Contact</h1>
       <p className="font-bold text-slate-300 tracking-wide pt-5 pb-10">Lets get in touch</p>
         <p className="text-slate-300 mb-10 mx-4">
@@ -227,6 +229,27 @@ const name = form.current!.from_name.value.trim()
     </form>
   </div>
  
+ <footer className="bg-slate-900 border-t p-5 border-slate-500 mt-20">
+  <div className="flex justify-center gap-7">
+  <div className="w-7">
+    <a href="" className="">
+    <img src={Github} className="w-full" alt="Github Logo" />
+    </a>
+  </div>
+
+   <div className="w-7">
+    <a href="" className="">
+    <img src={LinkedIn} className="w-full" alt="LinkedIn Logo" />
+    </a>
+  </div>
+
+     <div className="w-7">
+    <a href="" className="">
+    <img src={Upwork} className="w-full" alt="Upwork Logo" />
+    </a>
+  </div>
+</div>
+ </footer>
   </section>
 
 
