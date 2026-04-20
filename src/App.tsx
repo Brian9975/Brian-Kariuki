@@ -232,7 +232,7 @@ const name = form.current!.from_name.value.trim()
  <footer className="bg-slate-900 border-t p-5 border-slate-500 mt-20">
   <div className="flex justify-center gap-7">
   <div className="w-7">
-    <a href="" className="">
+    <a href="https://github.com/Brian9975" className="">
     <img src={Github} className="w-full" alt="Github Logo" />
     </a>
   </div>
@@ -250,7 +250,7 @@ const name = form.current!.from_name.value.trim()
   </div>
 </div>
 
-<p className="text-slate-500 mt-4 text-sm"> © 2026 Brrian Tech Solutions. All rights reserved.</p>
+<p className="text-slate-500 mt-4 text-sm"> © 2026 Brian Tech Solutions. All rights reserved.</p>
  </footer>
   </section>
 
