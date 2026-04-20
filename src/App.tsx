@@ -1,11 +1,75 @@
 import Library from "./assets/Screenshot 2026-04-16 13.57.40.png"
 import Booking from "./assets/Screenshot 2026-04-16 13.32.36.png"
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { useState, useRef } from "react";
+import { Menu, X, CheckCircle, XCircle } from "lucide-react";
+import emailjs from "@emailjs/browser"
 
 
 function App() {
+const form = useRef<HTMLFormElement>(null)
+
 const [openNav, setOpenNav] = useState(false)
+const [error, setError] = useState("")
+const [success, setSuccess] = useState(false)
+const [sending, setSending] =  useState(false)
+
+
+const handleSendMessage = (e: React.FormEvent<HTMLFormElement>) => {
+e.preventDefault()
+const name = form.current!.from_name.value.trim()
+ const email = form.current!.from_email.value.trim()
+  const message = form.current!.message.value.trim()
+
+
+    if (!name) { 
+      setError("Please enter your name")
+     
+       setTimeout(() => {
+      setError("")
+    }, 8000);
+
+     return 
+  
+  }
+    if (!email || !email.includes("@")) { setError("Please enter your email")
+    
+      setTimeout(() => {
+      setError("")
+    }, 8000)
+      return
+    
+    }
+    if (!message) { setError("Please enter your message");
+        setTimeout(() => {
+      setError("")
+    }, 8000)
+      return }
+    
+    setSending(true)
+   
+    emailjs.sendForm(
+      "service_4lze0tw",
+      "template_z9qyf3w",
+      form.current!,
+      "zVkR3KtUiKP960FUJ"
+    )
+    .then(() => {
+    setSuccess(true)
+    setTimeout(() => {
+     setSuccess(false)
+    }, 6000)
+    setSending(false)
+    form.current!.reset()
+    })
+    .catch(() => {
+      setError("Something went wrong. Please try again.")
+      setTimeout(() => {
+       setError("")
+      }, 6000)
+      setSending(false)
+    })
+
+}
 
 
   return <>
@@ -136,32 +200,60 @@ const [openNav, setOpenNav] = useState(false)
   </p>
 
   <div className="flex justify-center">
-    <form className="bg-slate-900 border border-slate-500 flex flex-col items-center justify-center gap-7 rounded-xl mx-10 p-5 text-slate-5" action="">
+    <form ref={form} onSubmit={handleSendMessage} className="bg-slate-900 border border-slate-500 flex flex-col items-center justify-center gap-7 rounded-xl mx-10 p-5 text-slate-5" action="">
       <div className="flex flex-col items-start">
-        <label className="text-slate-100 text-lg font-bold">
+        <label htmlFor="name" className="text-slate-100 text-lg font-bold">
           Name
         </label>
-        <input className="border-slate-500 mt-1.5 w-70 md:w-100 py-1 text-slate-100 px-2 outline-slate-500 border rounded" type="text" />
+        <input placeholder="Enter your name..." id="name" name="from_name" className="border-slate-500 placeholder-slate-500 mt-1.5 w-70 md:w-100 py-1 text-slate-100 px-2 outline-slate-500 border rounded" type="text" />
       </div>
       <div className="flex flex-col items-start">
-        <label className="text-slate-100 text-lg font-bold">
+        <label htmlFor="email" className="text-slate-100  text-lg font-bold">
           Email
         </label>
-        <input className="border-slate-500 mt-1.5 w-70 md:w-100 py-1 text-slate-100 px-2 outline-slate-500 border rounded " type="email" />
+        <input placeholder="Enter your email..." name="from_email" id="email" className="border-slate-500 mt-1.5 placeholder-slate-500 w-70 md:w-100 py-1 text-slate-100 px-2 outline-slate-500 border rounded " type="email" />
       </div>
 
         <div className="flex flex-col items-start">
-        <label className="text-slate-100 text-lg font-bold">
+        <label htmlFor="message" className="text-slate-100 text-lg font-bold">
           Your Message
         </label>
-        <textarea className="border-slate-500 mt-1.5 py-1 text-slate-100 px-2 outline-slate-500 border w-70 md:w-100 rounded"  name="" id=""></textarea>
+        <textarea placeholder="Enter your message..." name="message" className="border-slate-500 placeholder-slate-500 resize-none mt-1.5 py-1 text-slate-100 px-2 outline-slate-500 border w-70 md:w-100 rounded" id="message"></textarea>
       </div>
 
-      <button className="border border-slate-500 text-slate-950 bg-slate-100 py-1.5 w-full rounded cursor-pointer hover:opacity-80">Send</button>
+    
+
+      <button disabled={sending} className="border border-slate-500 text-slate-950 bg-slate-100 py-1.5 w-full rounded cursor-pointer hover:opacity-80">{sending ? "Sending..." : "Send Message"}</button>
     </form>
   </div>
  
   </section>
+
+
+{ error &&
+  <div className="fixed tracking-wide bottom-0 flex bg-slate-950/50 backdrop-blur-lg justify-end w-full">
+
+<div className="bg-transparent border border-slate-500 m-5 py-4 px-5 rounded-xl">
+
+    <p className="text-red-400 text-sm"><div className="flex items-center gap-2"><XCircle size={16}/><div><p>{error}</p></div></div></p>
+</div>
+
+
+
+  </div>
+}
+
+{ success &&
+  <div className="fixed bottom-0 tracking-wide flex bg-slate-950/50 backdrop-blur-md justify-end w-full">
+
+<div className="bg-transparent border border-slate-500 m-5 py-4 px-5 rounded-xl">
+     <p className="text-green-400 text-sm"><div className="flex items-center gap-2"><CheckCircle size={16}/><div><p>Message sent successfully.</p></div></div></p>
+</div>
+
+
+
+  </div>
+}
   
   </>;
 }
