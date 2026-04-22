@@ -238,7 +238,7 @@ const name = form.current!.from_name.value.trim()
   </div>
 
    <div className="w-7">
-    <a href="" className="https://www.linkedin.com/in/briankariukitech">
+    <a href="https://www.linkedin.com/in/briankariukitech/" className="">
     <img src={LinkedIn} className="w-full" alt="LinkedIn Logo" />
     </a>
   </div>
