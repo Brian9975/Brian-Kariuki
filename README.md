@@ -1,4 +1,4 @@
-# 🚀 Personal Portfolio | Frontend Developer
+# Personal Portfolio | Frontend Developer
 This is my professional portfolio showcasing my expertise in building functional, business-oriented web applications using the modern JavaScript ecosystem.
 
 **Live Demo:** [https://brian-kariuki.vercel.app]
