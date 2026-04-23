@@ -9,7 +9,7 @@ const form = useRef<HTMLFormElement>(null)
 
 
 
-const handleSendMessage = (e: React.FormEvent<HTMLFormElement>, error: string, success: boolean, setError: React.Dispatch<React.SetStateAction<string>>, setSuccess: React.Dispatch<React.SetStateAction<boolean>>) => {
+const handleSendMessage = (e: React.FormEvent<HTMLFormElement>, setError: React.Dispatch<React.SetStateAction<string>>, setSuccess: React.Dispatch<React.SetStateAction<boolean>>) => {
 e.preventDefault()
 const name = form.current!.from_name.value.trim()
  const email = form.current!.from_email.value.trim()

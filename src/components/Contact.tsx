@@ -22,7 +22,7 @@ export default function Contact() {
   </p>
 
   <div className="flex justify-center">
-    <form ref={form} onSubmit={(e) => handleSendMessage(e, error, success, setError, setSuccess)} className="bg-slate-900 border border-slate-500 flex flex-col items-center justify-center gap-7 rounded-xl mx-10 p-5 text-slate-5" action="">
+    <form ref={form} onSubmit={(e) => handleSendMessage(e, setError, setSuccess)} className="bg-slate-900 border border-slate-500 flex flex-col items-center justify-center gap-7 rounded-xl mx-10 p-5 text-slate-5" action="">
       <div className="flex flex-col items-start">
         <label htmlFor="name" className="text-slate-100 text-lg font-bold">
           Name
