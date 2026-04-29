@@ -21,7 +21,7 @@ const name = form.current!.from_name.value.trim()
      
        setTimeout(() => {
       setError("")
-    }, 8000);
+    }, 6000);
 
      return 
   
@@ -32,7 +32,7 @@ const name = form.current!.from_name.value.trim()
     
       setTimeout(() => {
       setError("")
-    }, 8000)
+    }, 6000)
       return
     
     }
