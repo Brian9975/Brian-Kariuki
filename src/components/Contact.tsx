@@ -14,7 +14,7 @@ export default function Contact() {
 
   return (
     <>
-   <section id="contact" className="bg-slate-950 pt-30 tracking-wide text-center">
+   <section id="contact" className="bg-slate-900 pt-30 tracking-wide text-center">
       <h1 className="text-cyan-400 tracking-wide font-bold text-2xl">Contact</h1>
       <p className="font-bold text-slate-300 tracking-wide pt-5 pb-10">Lets get in touch</p>
         <p className="text-slate-300 mb-10 mx-4">
@@ -49,7 +49,7 @@ export default function Contact() {
     </form>
   </div>
  
- <footer className="bg-slate-900 border-t p-5 border-slate-500 mt-20">
+ <footer className="bg-slate-950 border-t p-5 border-slate-500 mt-20">
   <div className="flex justify-center gap-7">
   <div className="w-7">
     <a href="https://github.com/Brian9975" className="">
