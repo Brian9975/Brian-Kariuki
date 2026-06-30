@@ -12,7 +12,7 @@ export default function Projects() {
         <img className="w-full rounded-lg" src={Library} alt="Library system screenshot" />
       </div>
       <h1 className="text-left mb-5 text-slate-100 text-xl tracking-wide font-bold">Strathmore University Chaplaincy Library System</h1>
-      <p className="text-left mb-3 text-slate-300 tracking-wide">l developed a full-stack Library Management System for Strathmore University Chaplaincy.The system's features include role-based access control, book management, issue and return functionality,overdue tracking, search filters and firebase email and password authentication only for authorized admins. </p>
+      <p className="text-left mb-3 text-slate-300 tracking-wide">l developed a full-stack Admin Library Management System for Strathmore University Chaplaincy. </p>
 
       <h1 className="text-left mb-5 text-slate-100 font-bold text-lg">Technologies used</h1>
       <div className="flex flex-wrap mb-5 gap-4">
@@ -36,7 +36,6 @@ export default function Projects() {
       </div>
       <h1 className="text-left mb-5 text-slate-100 text-xl tracking-wide font-bold">Multi-Business Booking Manager</h1>
       <p className="text-left mb-3 text-slate-300 tracking-wide">l built a secure booking management system to help keep track of customers and bookings with status update.
-        The main features include multi-tenancy logic meaning, different businesses can use the same app, but their data is completely private and isolated from each other, customer management, booking customers for different services in seconds and Firebase authentication.
       </p>
             <h1 className="text-left mb-5 text-slate-100 font-bold text-lg">Technologies used</h1>
              <div className="flex flex-wrap mb-5 gap-4">
@@ -55,6 +54,59 @@ export default function Projects() {
           </a>
       </div>
     </div>
+
+ <div className="w-80 md:w-120 p-4 border border-slate-500 rounded-xl bg-slate-950 tracking-wide">
+      <div className="mb-5">
+        <img className="w-full rounded-lg" src={Booking} alt="Booking system screenshot" />
+      </div>
+      <h1 className="text-left mb-5 text-slate-100 text-xl tracking-wide font-bold">Space Tourism Website Challenge Frrom Frontend Mentor</h1>
+      <p className="text-left mb-3 text-slate-300 tracking-wide">l took a Challenge From Frontend Mentor to build this Space Tourism Website.
+      </p>
+            <h1 className="text-left mb-5 text-slate-100 font-bold text-lg">Technologies used</h1>
+             <div className="flex flex-wrap mb-5 gap-4">
+        {["React", "TypeScript", "Tailwind"].map(skill => (
+      <span className="text-slate-300 bg-slate-900 border border-cyan-400 py-1 px-2 text-sm rounded-lg" key={skill}>{skill}</span>
+    ))}
+      </div>
+
+       <div className="mb-5 flex gap-4">
+        <a href="https://your-booking-manager.vercel.app" className="bg-cyan-400 hover:opacity-80 cursor-pointer  rounded py-2 px-5">
+          Visit
+          </a>
+
+          <a href="https://github.com/Brian9975/Booking-System" className="border-slate-500 hover:opacity-80 cursor-pointer rounded border py-2 px-5 text-slate-300">
+            Github
+          </a>
+      </div>
+    </div>
+
+ <div className="w-80 md:w-120 p-4 border border-slate-500 rounded-xl bg-slate-950 tracking-wide">
+      <div className="mb-5">
+        <img className="w-full rounded-lg" src={Booking} alt="Booking system screenshot" />
+      </div>
+      <h1 className="text-left mb-5 text-slate-100 text-xl tracking-wide font-bold">Ahwan Pharmacy Website </h1>
+      <p className="text-left mb-3 text-slate-300 tracking-wide">As a Freelancer l have worked with Pharmacies and built this Webiste for Ahwan Pharmacies to capture online orders by 10 percent.
+      </p>
+            <h1 className="text-left mb-5 text-slate-100 font-bold text-lg">Technologies used</h1>
+             <div className="flex flex-wrap mb-5 gap-4">
+        {["HTML", "CSS", "JavaScript"].map(skill => (
+      <span className="text-slate-300 bg-slate-900 border border-cyan-400 py-1 px-2 text-sm rounded-lg" key={skill}>{skill}</span>
+    ))}
+      </div>
+
+       <div className="mb-5 flex gap-4">
+        <a href="https://ahwanpharmacy.co.ke" className="bg-cyan-400 hover:opacity-80 cursor-pointer  rounded py-2 px-5">
+          Visit
+          </a>
+
+          <a href="https://github.com/Brian9975/Booking-System" className="border-slate-500 hover:opacity-80 cursor-pointer rounded border py-2 px-5 text-slate-300">
+            Github
+          </a>
+      </div>
+    </div>
+
+
+    
   </div>
 </section>
   )

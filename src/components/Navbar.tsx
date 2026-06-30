@@ -5,7 +5,7 @@ export default function Navbar() {
 const [openNav, setOpenNav] = useState(false)
     
   return (
-      <nav className="bg-slate-900 z-50 border-b border-slate-500 fixed top-0 w-full p-5 text-slate-100">
+      <nav className="bg-slate-900 z-50 border-b border-slate-500 sticky top-0 w-full p-5 text-slate-100">
     <div className="flex justify-between items-center">
     <div>
       <p className="font-bold text-lg tracking-wide"><span className="text-cyan-400">Brian</span> Tech Solutions</p>
