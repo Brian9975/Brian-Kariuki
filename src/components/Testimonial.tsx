@@ -8,7 +8,7 @@ export default function Testimonial() {
   <p className="font-bold text-slate-300 tracking-wide py-5">What my clients say</p>
      
      <div className="grid grid-cols-1 text-slate-100 gap-4 place-items-center">
-       <div className="bg-slate-900 w-sm md:w-4xl mx-10 p-5 rounded-xl">
+       <div className="bg-slate-900 w-90 md:w-4xl mx-10 p-5 rounded-xl">
          <header className="flex flex-col  md:flex-row md:gap-0  ">
           <div className=" md:justify-start items-center  flex-col md:flex-row flex md:items-end">
             <div className="w-40 md:w-50"><img className="w-full" src={StrathLogo}/></div>
