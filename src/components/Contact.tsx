@@ -17,9 +17,6 @@ export default function Contact() {
    <section id="contact" className="bg-slate-900 pt-30 tracking-wide text-center">
       <h1 className="text-cyan-400 tracking-wide font-bold text-2xl">Contact</h1>
       <p className="font-bold text-slate-300 tracking-wide py-5">Lets get in touch</p>
-        <p className="text-slate-300 pb-5 mx-4">
-    Available for freelance projects and remote opportunities worldwide
-  </p>
 
   <div className="flex justify-center">
     <form ref={form} onSubmit={(e) => handleSendMessage(e, setError, setSuccess)} className="bg-slate-900 border border-slate-500 flex flex-col items-center justify-center gap-7 rounded-xl mx-10 p-5 text-slate-5" action="">

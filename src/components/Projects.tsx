@@ -4,11 +4,11 @@ import Ahwan from "../assets/Screenshot 2026-10-23 12.56.34.png"
 import Space from "../assets/Screenshot 2026-10-23 13.12.44.png"
 export default function Projects() {
   return (
-   <section id="projects" className="bg-slate-900 text-center py-16 md:py-24">
+   <section id="projects" className="bg-slate-950 text-center py-16 md:py-24">
   <h1 className="text-cyan-400 tracking-wide font-bold text-2xl">Projects</h1>
   <p className="font-bold text-slate-300 tracking-wide py-5">What l have built</p>
   <div className="grid grid-cols-1 md:grid-cols-2  justify-items-center items-start gap-4">
-    <div className="w-90 md:w-120 p-4 shadow-md shadow-slate-600 rounded-xl bg-slate-950">
+    <div className="w-90 md:w-120 p-4 shadow-md shadow-slate-600 rounded-xl bg-slate-900">
       <div className="mb-5">
         <img className="w-full rounded-lg" src={Library} alt="Library system screenshot" />
       </div>
@@ -19,7 +19,7 @@ export default function Projects() {
 
       <div className="flex flex-wrap mb-5 gap-4">
         {["React", "TypeScript", "Firebase", "Tailwind CSS", "ShadCN"].map(skill => (
-      <span className="text-slate-300 bg-slate-900 border border-cyan-400 py-1 px-2 text-sm rounded-lg" key={skill}>{skill}</span>
+      <span className="text-slate-300 bg-slate-950 border border-cyan-400 py-1 px-2 text-sm rounded-lg" key={skill}>{skill}</span>
     ))}
       </div>
       <div className="mb-5 flex gap-4">
@@ -32,7 +32,7 @@ export default function Projects() {
           </a>
       </div>
     </div>
-    <div className="w-90 md:w-120 p-4 shadow-md shadow-slate-600 rounded-xl bg-slate-950 tracking-wide">
+    <div className="w-90 md:w-120 p-4 shadow-md shadow-slate-600 rounded-xl bg-slate-900 tracking-wide">
       <div className="mb-5">
         <img className="w-full rounded-lg" src={LeadTracker} alt="Lead Tracker screenshot" />
       </div>
@@ -42,7 +42,7 @@ export default function Projects() {
 
              <div className="flex flex-wrap mb-5 gap-4">
         {["React", "TypeScript", "Firebase", "Tailwind CSS", "IndexedDB"].map(skill => (
-      <span className="text-slate-300 bg-slate-900 border border-cyan-400 py-1 px-2 text-sm rounded-lg" key={skill}>{skill}</span>
+      <span className="text-slate-300 bg-slate-950 border border-cyan-400 py-1 px-2 text-sm rounded-lg" key={skill}>{skill}</span>
     ))}
       </div>
 
@@ -57,7 +57,7 @@ export default function Projects() {
       </div>
     </div>
 
- <div className="w-90 md:w-120 p-4 shadow-md shadow-slate-600 rounded-xl bg-slate-950 tracking-wide">
+ <div className="w-90 md:w-120 p-4 shadow-md shadow-slate-600 rounded-xl bg-slate-900 tracking-wide">
       <div className="mb-5">
         <img className="w-full rounded-lg" src={Ahwan} alt="Ahwan pharmacy website screenshot" />
       </div>
@@ -67,7 +67,7 @@ export default function Projects() {
             
              <div className="flex flex-wrap mb-5 gap-4">
         {["HTML", "CSS", "JavaScript", "Google Analytics 4"].map(skill => (
-      <span className="text-slate-300 bg-slate-900 border border-cyan-400 py-1 px-2 text-sm rounded-lg" key={skill}>{skill}</span>
+      <span className="text-slate-300 bg-slate-950 border border-cyan-400 py-1 px-2 text-sm rounded-lg" key={skill}>{skill}</span>
     ))}
       </div>
 
@@ -82,7 +82,7 @@ export default function Projects() {
       </div>
     </div>
 
- <div className="w-90 md:w-120 p-4 shadow-md shadow-slate-600 rounded-xl bg-slate-950 tracking-wide">
+ <div className="w-90 md:w-120 p-4 shadow-md shadow-slate-600 rounded-xl bg-slate-900 tracking-wide">
       <div className="mb-5">
         <img className="w-full rounded-lg" src={Space} alt="Space Tourism Website screenshot" />
       </div>
@@ -92,7 +92,7 @@ export default function Projects() {
             <h1 className="text-left mb-5 text-slate-100 font-bold text-lg">Technologies used</h1>
              <div className="flex flex-wrap mb-5 gap-4">
         {["React", "Tailwind CSS"].map(skill => (
-      <span className="text-slate-300 bg-slate-900 border border-cyan-400 py-1 px-2 text-sm rounded-lg" key={skill}>{skill}</span>
+      <span className="text-slate-300 bg-slate-950 border border-cyan-400 py-1 px-2 text-sm rounded-lg" key={skill}>{skill}</span>
     ))}
       </div>
 
