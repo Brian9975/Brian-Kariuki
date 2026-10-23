@@ -3,9 +3,9 @@ import Booking from "../assets/Screenshot 2026-04-16 13.32.36.png"
 
 export default function Projects() {
   return (
-   <section id="projects" className="bg-slate-900  text-center py-30">
+   <section id="projects" className="bg-slate-900 text-center py-16 md:py-24">
   <h1 className="text-cyan-400 tracking-wide font-bold text-2xl">Projects</h1>
-  <p className="font-bold text-slate-300 tracking-wide pt-5 pb-10">What l have built</p>
+  <p className="font-bold text-slate-300 tracking-wide py-5">What l have built</p>
   <div className="grid grid-cols-1 md:grid-cols-2 place-items-center gap-4">
     <div className="w-80 md:w-120 p-4 border border-slate-500 rounded-xl bg-slate-950">
       <div className="mb-5">
