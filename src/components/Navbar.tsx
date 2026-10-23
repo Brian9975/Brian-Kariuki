@@ -8,7 +8,7 @@ const [openNav, setOpenNav] = useState(false)
       <nav className="bg-slate-900 z-50 border-b border-slate-500 sticky top-0 w-full p-5 text-slate-100">
     <div className="flex justify-between items-center">
     <div>
-      <p className="font-bold text-lg tracking-wide"><span className="text-cyan-400">Brian</span> Tech Solutions</p>
+      <p className="font-bold text-lg tracking-wide"><span className="text-cyan-400">Brian</span> Kariuki</p>
     </div> 
 
    <div className="md:flex hidden text-slate-300 text-sm font-bold gap-4 md:gap-25">

@@ -12,9 +12,9 @@ export default function Projects() {
         <img className="w-full rounded-lg" src={Library} alt="Library system screenshot" />
       </div>
       <h1 className="text-left mb-5 text-slate-100 text-xl tracking-wide font-bold">Strathmore University Chaplaincy Library System</h1>
-      <p className="text-left mb-3 text-slate-300 tracking-wide">l developed a full-stack Admin Library Management System for Strathmore University Chaplaincy. </p>
+      <p className="text-left mb-3 text-slate-300 text-lg tracking-wide">l developed a full-stack Admin Library Management System for Strathmore University Chaplaincy. </p>
 
-      <h1 className="text-left mb-5 text-slate-100 font-bold text-lg">Technologies used</h1>
+      <h1 className="text-left mb-5 text-slate-100 font-bold text-lg">Technologies used:</h1>
       <div className="flex flex-wrap mb-5 gap-4">
         {["React", "TypeScript", "Firebase", "Tailwind", "ShadCN"].map(skill => (
       <span className="text-slate-300 bg-slate-900 border border-cyan-400 py-1 px-2 text-sm rounded-lg" key={skill}>{skill}</span>
@@ -35,7 +35,7 @@ export default function Projects() {
         <img className="w-full rounded-lg" src={Booking} alt="Booking system screenshot" />
       </div>
       <h1 className="text-left mb-5 text-slate-100 text-xl tracking-wide font-bold">Multi-Business Booking Manager</h1>
-      <p className="text-left mb-3 text-slate-300 tracking-wide">l built a secure booking management system to help keep track of customers and bookings with status update.
+      <p className="text-left mb-3 text-slate-300 tracking-wide text-lg">l built a secure booking management system to help keep track of customers and bookings with status update.
       </p>
             <h1 className="text-left mb-5 text-slate-100 font-bold text-lg">Technologies used</h1>
              <div className="flex flex-wrap mb-5 gap-4">
@@ -60,7 +60,7 @@ export default function Projects() {
         <img className="w-full rounded-lg" src={Booking} alt="Booking system screenshot" />
       </div>
       <h1 className="text-left mb-5 text-slate-100 text-xl tracking-wide font-bold">Space Tourism Website Challenge Frrom Frontend Mentor</h1>
-      <p className="text-left mb-3 text-slate-300 tracking-wide">l took a Challenge From Frontend Mentor to build this Space Tourism Website.
+      <p className="text-left mb-3 text-slate-300 tracking-wide text-lg">l took a Challenge From Frontend Mentor to build this Space Tourism Website.
       </p>
             <h1 className="text-left mb-5 text-slate-100 font-bold text-lg">Technologies used</h1>
              <div className="flex flex-wrap mb-5 gap-4">
@@ -85,7 +85,7 @@ export default function Projects() {
         <img className="w-full rounded-lg" src={Booking} alt="Booking system screenshot" />
       </div>
       <h1 className="text-left mb-5 text-slate-100 text-xl tracking-wide font-bold">Ahwan Pharmacy Website </h1>
-      <p className="text-left mb-3 text-slate-300 tracking-wide">As a Freelancer l have worked with Pharmacies and built this Webiste for Ahwan Pharmacies to capture online orders by 10 percent.
+      <p className="text-left mb-3 text-slate-300 tracking-wide text-lg">As a Freelancer l have worked with Pharmacies and built this Webiste for Ahwan Pharmacies to capture online orders by 10 percent.
       </p>
             <h1 className="text-left mb-5 text-slate-100 font-bold text-lg">Technologies used</h1>
              <div className="flex flex-wrap mb-5 gap-4">
