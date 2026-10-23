@@ -1,6 +1,6 @@
 import { LucideStar } from "lucide-react"
 import StrathLogo from "../assets/StrathLogo.png"
-
+import Ahwan from "../assets/IMG-20260627-WA0001.jpg"
 export default function Testimonial() {
   return (
     <section id="testimonial" className="bg-slate-950  text-center py-16 md:py-24">
@@ -8,7 +8,7 @@ export default function Testimonial() {
   <p className="font-bold text-slate-300 tracking-wide py-5">What my clients say</p>
      
      <div className="grid grid-cols-1 text-slate-100 gap-4 place-items-center">
-       <div className="bg-slate-900 w-90 md:w-4xl mx-10 p-5 rounded-xl">
+       <div className="bg-slate-900 transition-all hover:scale-101 w-90 md:w-4xl mx-10 p-5 rounded-xl">
          <header className="flex flex-col  md:flex-row md:gap-0  ">
           <div className=" md:justify-start items-center  flex-col md:flex-row flex md:items-end">
             <div className="w-40 md:w-50"><img className="w-full" src={StrathLogo}/></div>
@@ -34,6 +34,35 @@ export default function Testimonial() {
                 </div>
             </footer>
        </div>
+
+
+        <div className="bg-slate-900 transition-all hover:scale-101 w-90 md:w-4xl mx-10 p-5 rounded-xl">
+         <header className="flex flex-col md:flex-row">
+          <div className=" md:justify-start md:ml-15 items-center gap-3 md:gap-10  flex-col md:flex-row flex md:items-end">
+            <div className="w-15 md:w-20"><img className="w-full rounded-full " src={Ahwan}/></div>
+            <div><h1 className="text-amber-400  text-xl tracking-wide mb-4 font-bold">Ahwan Pharmacy Limited</h1></div>
+            </div>
+
+         </header>
+         <p className="text-left my-3 tracking-wide text-slate-300">Thank you so much Brian for creating our business website, so quickly, precise and beautiful, I truly appreciate your professionalism, efficiency, and great work. I definitely recommend you immense service to anyone looking for a quality website design. 
+Wishing you continued success! And more workings in future.</p>
+
+            <footer className="flex justify-between mt-5 items-center">
+            <div className="flex  gap-1">
+              <span><LucideStar size={20} className="text-amber-400 fill-current"/></span>
+              <span><LucideStar size={20} className="text-amber-400 fill-current"/></span>
+              <span><LucideStar size={20} className="text-amber-400 fill-current"/></span>
+              <span><LucideStar size={20} className="text-amber-400 fill-current"/></span>
+              <span><LucideStar size={20} className="text-amber-400 fill-current"/></span>
+            
+            </div>
+                <div>
+
+               <h6 className="text-sm  font-bold tracking-wide">From <span className="text-amber-400">L. Chrispinous</span></h6>
+                </div>
+            </footer>
+       </div>
+   
      </div>
     </section>
 
