@@ -60,7 +60,9 @@ export default function Contact() {
   </div>
 </div>
 
-<p className="text-slate-500 mt-4 text-sm"> © 2026 Brian Tech Solutions. All rights reserved.</p>
+<p className="text-slate-500 mt-4 text-sm">+254 1 42 692 333</p>
+<p className="text-slate-500 mt-2 text-sm"> briantech100@gmail.com</p>
+<p className="text-slate-500 mt-2 text-sm"> © 2026 Brian Kariuki. All rights reserved.</p>
  </footer>
   </section>
 
