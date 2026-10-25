@@ -66,7 +66,7 @@ export default function Contact() {
 
 
   { error &&
-  <div className="fixed tracking-wide bottom-0 flex bg-slate-950/50 backdrop-blur-lg justify-end w-full">
+  <div className="fixed z-50 tracking-wide bottom-0 flex bg-slate-950/50 backdrop-blur-lg justify-end w-full">
 
 <div className="bg-transparent border border-slate-500 m-5 py-4 px-5 rounded-xl">
 
@@ -79,7 +79,7 @@ export default function Contact() {
 }
 
 { success &&
-  <div className="fixed bottom-0 tracking-wide flex bg-slate-950/50 backdrop-blur-md justify-end w-full">
+  <div className="fixed z-50 bottom-0 tracking-wide flex bg-slate-950/50 backdrop-blur-md justify-end w-full">
 
 <div className="bg-transparent border border-slate-500 m-5 py-4 px-5 rounded-xl">
      <p className="text-green-400 text-sm"><div className="flex items-center gap-2"><CheckCircle size={16}/><div><p>Message sent successfully.</p></div></div></p>
