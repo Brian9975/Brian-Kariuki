@@ -1,6 +1,5 @@
 import Github from "../assets/github-white-icon.png";
 import LinkedIn from "../assets/linkedin-app-white-icon.png";
-import Upwork from "../assets/upwork-svgrepo-com.svg"
 import useSendMessage from "./hook/useSendMessage";
 import {useState} from "react"
 import { XCircle, CheckCircle } from "lucide-react";
@@ -57,12 +56,6 @@ export default function Contact() {
    <div className="w-7">
     <a href="https://www.linkedin.com/in/briankariukitech/" className="">
     <img src={LinkedIn} className="w-full" alt="LinkedIn Logo" />
-    </a>
-  </div>
-
-     <div className="w-7">
-    <a href="" className="">
-    <img src={Upwork} className="w-full" alt="Upwork Logo" />
     </a>
   </div>
 </div>

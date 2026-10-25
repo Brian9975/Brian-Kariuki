@@ -12,7 +12,7 @@ export default function Projects() {
       <div className="mb-5">
         <img className="w-full rounded-lg" src={Library} alt="Library system screenshot" />
       </div>
-      <h1 className="text-left mb-5 text-slate-100 text-xl tracking-wide font-bold">Strathmore University Chaplaincy Library System</h1>
+      <h1 className="text-left mb-5 text-slate-100 text-xl tracking-wide font-bold">Strathmore University - Institution's Library System</h1>
       <p className="text-left mb-3 text-slate-300 text-lg tracking-wide">Built an internal library management system for Strathmore University Chaplaincy, replacing manual book tracking with digital cataloguing, borrowing records, and real-time availability. Features secure authentication and role-based permissions for administrators.<br/><br/>
 
 <span className="text-sm text-amber-400">Access: This is a live institutional system restricted to authorized administrators. Source code and setup instructions are available on GitHub.</span></p>
