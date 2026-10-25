@@ -20,7 +20,7 @@ function App() {
 
 
       <div className="backdrop-blur-lg text-slate-50 fixed bottom-7 right-5 text-lg font-bold border border-slate-600 rounded-lg p-2">
-         <p className="flex items-center gap-2"><Phone size={20}/><span>01 42 692 333</span></p>
+         <p className="flex  items-center gap-2"><Phone size={20}/><span>+254 1 42 692 333</span></p>
       </div>
     </>
   );
