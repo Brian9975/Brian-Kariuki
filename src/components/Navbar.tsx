@@ -12,7 +12,7 @@ const [openNav, setOpenNav] = useState(false)
     </div> 
 
    <div className="md:flex hidden text-slate-300 text-sm font-bold gap-4 md:gap-25">
-    <a href="#about" className="hover:text-cyan-400 transition-all">Home</a><a href="#about" className="hover:text-cyan-400 transition-all">About</a><a className="hover:text-cyan-400 transition-all" href="#testimonial">Testimonial</a><a className="hover:text-cyan-400 transition-all" href="#skills">Skills</a><a href="#projects" className="hover:text-cyan-400 transition-all">Projects</a><a className="hover:text-cyan-400 transition-all" href="#contact">Contact</a>
+    <a href="#hero" className="hover:text-cyan-400 transition-all">Home</a><a href="#about" className="hover:text-cyan-400 transition-all">About</a><a className="hover:text-cyan-400 transition-all" href="#testimonial">Testimonial</a><a className="hover:text-cyan-400 transition-all" href="#skills">Skills</a><a href="#projects" className="hover:text-cyan-400 transition-all">Projects</a><a className="hover:text-cyan-400 transition-all" href="#contact">Contact</a>
     
    </div>
     <button onClick={() => setOpenNav(!openNav)} className="md:hidden cursor-pointer">
